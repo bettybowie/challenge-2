@@ -1,0 +1,60 @@
+:root {
+    --neon: rgb(0, 212, 212);
+    --gray: rgb(77, 77, 77);
+    --blue: 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    background-color: var(--gray);
+    color: var(--neon);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 0;
+}
+
+h1 {
+    background-color: var(--neon);
+    color: var(--gray);
+    font-size: 450%;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  }
+  
+
+nav ul li {
+  font-size: 150%;
+}
+
+nav a {
+  color: var(--neon);
+  font-weight: bolder;
+  border-bottom: var(--neon) 200%;
+  }
+
+nav a:hover {
+  color: #fff;
+  }
+
+main {
+  display: flex;
+  }

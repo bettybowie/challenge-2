@@ -20,6 +20,7 @@ body {
 
 p {
   font-size: 110%;
+  padding-left: 10px;
 }
 
 header {
@@ -83,7 +84,6 @@ main {
 section {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   padding: 4%;
 }
 
@@ -91,6 +91,10 @@ h2 {
   color: var(--blue);
   font-size: 400%;
   border-right: solid;
+  /* min-width: 210px;
+  word-wrap: break-word !important;
+  max-width: 210px;
+  text-align: right; */
 }
 
 h3 {
@@ -102,6 +106,11 @@ h3 {
   width: 350px;
   height: 120px;
 }
+/* 
+.work-div {
+  display:flex;
+  flex-wrap: wrap;
+}  */
 
 .work:hover {
   opacity: 1;
@@ -159,4 +168,4 @@ h3 {
 
 @media screen and (max-width: 600px) {
 
-  
+}

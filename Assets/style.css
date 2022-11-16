@@ -5,12 +5,13 @@
     --bg: rgba(238,238,247,255);
 }
 
+/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
+  /* Element Selectors */
 body {
     font-family: monospace;
     display: flex;
@@ -20,7 +21,7 @@ body {
 
 p {
   font-size: 110%;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 header {
@@ -78,7 +79,7 @@ figcaption {
 main {
   display: flex;
   flex-direction: column;
-  padding: 4%;
+  padding: 4% 10%;
   }
 
 section {
@@ -91,35 +92,35 @@ h2 {
   color: var(--blue);
   font-size: 400%;
   border-right: solid;
-  /* min-width: 210px;
-  word-wrap: break-word !important;
+  min-width: 210px;
   max-width: 210px;
-  text-align: right; */
+  text-align: right;
 }
 
 h3 {
   font-size: 150%
 }
 
-.work {
-  opacity: 0.5;
-  width: 350px;
-  height: 120px;
+/* Class  Selectors*/
+.work, .refactor {
+  position: relative;
 }
-/* 
+
 .work-div {
   display:flex;
   flex-wrap: wrap;
-}  */
+  padding-left: 20px;
+  justify-content:space-around ;
+} 
 
-.work:hover {
+.work img:hover, .refactor img:hover {
   opacity: 1;
 }
 
 .refactor img {
   width: 700px;
   height: 220px;
-  position: relative;
+  opacity: 0.5;
 }
 
 .refactor div {
@@ -127,27 +128,32 @@ h3 {
   background-color: var(--neon);
   color: var(--blue);
   bottom: 70px;
+  padding: 1%;
 }
 
-.portfolio img {
-  position: relative;
+.work img {
+  width: 350px;
+  height: 110px;
+  opacity: 0.5;
 }
 
-.portfolio div {
+.work div {
   position: absolute;
   background-color: var(--neon);
   color: var(--blue);
-  bottom: 1px;
+  bottom: 40px;
+  padding: 2%;
 }
 
 #ContactMe ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   color: var(--blue);
   font-size: 120%;
-  width: 500px;
+  min-width: 700px;
+  padding-left: 20px;
 }
 
 #ContactMe a {
@@ -159,13 +165,83 @@ h3 {
   border-bottom: solid;
 }
 
-@media screen and (max-width: 986px) {
+@media screen and (max-width: 768px) {
+  body {
+    width: 768px;
+  }
+
+  nav ul {
+    align-items: flex-end;
+    flex-direction: column;
+    }
+  
+  nav a {
+
+    border-bottom: none;
+    }
+
+  figure {
+    width: 768px;
+  }
+
+  main {
+    width: 768px;
+    padding: 0;
+  }
+
+  section {
+    padding: 4% 2%;
+  }
+  
   h2 {
-    border-right: none;
-    border-bottom: solid;
+    font-size: 300%;
+    min-width: 150px;
+    max-width: 150px;
+  }
+  
+  .refactor img {
+    width: 550px;
+  }
+
+  #ContactMe ul {
+    min-width: 550px;
   }
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    width: 600px;
+  }
 
+  nav ul {
+    align-items: flex-end;
+    width: 400px;
+  }
+  
+  figure {
+    width: 600px;
+  }
+
+  main {
+    width: 600px;
+  }
+
+  #AboutMe p, #Work .refactor, #ContactMe ul {
+    padding-top: 2%;
+  }
+
+  h2{
+    border-bottom: solid;
+    border-right: none;
+    }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    padding: 4% 0%;
+  }
+  #ContactMe ul {
+    min-width: 550px;
+  }
 }
+

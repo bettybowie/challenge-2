@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
   }
 
   /* Element Selectors */
@@ -33,6 +34,11 @@ header {
     padding: 1% 5% 1% 0;
 }
 
+header, figure {
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
     background-color: var(--neon);
     color: var(--gray);
@@ -53,7 +59,6 @@ nav a {
   color: var(--neon);
   font-weight: bolder;
   border-bottom: solid;
-  text-decoration: none;
   padding: 5px 5px;
   font-size: 150%;
   }
@@ -61,6 +66,10 @@ nav a {
 nav a:hover {
   color: #fff;
   }
+
+a {
+  text-decoration: none;
+}
 
 figure {
   position: relative;
@@ -110,8 +119,8 @@ h3 {
   display:flex;
   flex-wrap: wrap;
   padding-left: 20px;
-  justify-content:space-evenly ;
-} 
+  justify-content: space-around;
+}
 
 .work img:hover, .refactor img:hover {
   opacity: 1;
@@ -129,20 +138,25 @@ h3 {
   color: var(--blue);
   bottom: 70px;
   padding: 1%;
+  width: 170px;
+  height: 50px;
 }
 
 .work img {
   width: 350px;
   height: 110px;
   opacity: 0.5;
+  padding-top: 20px;
 }
 
 .work div {
   position: relative;
   background-color: var(--neon);
   color: var(--blue);
-  bottom: 40px;
-  padding: 2%;
+  bottom: 80px;
+  padding: 1%;
+  width: 170px;
+  height: 50px;
 }
 
 #ContactMe ul {
@@ -179,10 +193,6 @@ h3 {
 
     border-bottom: none;
     }
-
-  figure {
-    width: 768px;
-  }
 
   main {
     width: 768px;

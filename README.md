@@ -7,8 +7,6 @@ This is the UW Boot Camp Week 2 Challenge. Student was asked to create a portfol
 
 
 ## Visual
-![](C:\Users\cutes\bootcamp\challenge-2\Assets\images\Betty's Porfolio.gif)
-
 ![Demo](C:\Users\cutes\bootcamp\challenge-2\Assets\images\Betty's Porfolio.gif)
 
 ## Links

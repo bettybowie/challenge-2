@@ -110,7 +110,7 @@ h3 {
   display:flex;
   flex-wrap: wrap;
   padding-left: 20px;
-  justify-content:space-around ;
+  justify-content:space-evenly ;
 } 
 
 .work img:hover, .refactor img:hover {

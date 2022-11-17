@@ -138,7 +138,7 @@ h3 {
 }
 
 .work div {
-  position: absolute;
+  position: relative;
   background-color: var(--neon);
   color: var(--blue);
   bottom: 40px;

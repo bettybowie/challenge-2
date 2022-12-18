@@ -18,9 +18,9 @@ When the page resizes on various screens, the layout will respond accordingly to
 
 ## Links
 
-Solution URL: [https://github.com/bettybowie/challenge-2]  
+Solution URL: [https://github.com/bettybowie/portfolioPage]  
 
-Live URL: [https://bettybowie.github.io/challenge-2/]
+Live URL: [https://bettybowie.github.io/portfolioPage/]
 
 ## License
 
